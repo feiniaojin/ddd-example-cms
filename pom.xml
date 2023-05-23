@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.12</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    
+    <groupId>com.feiniaojin.dddexample</groupId>
+    <artifactId>ddd-example-cms</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-ui-worker</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-ui-subscriber</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-ui-provider</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-infrastructure-cache</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-domain</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-infrastructure-persistence</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-infrastructure-cache</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-infrastructure-publisher</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-infrastructure-gateway</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-application-service</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-ui-web</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.dddexample</groupId>
+                <artifactId>ddd-example-cms-launcher</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin</groupId>
+                <artifactId>ddd</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin</groupId>
+                <artifactId>ddd</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin</groupId>
+                <artifactId>graceful-response</artifactId>
+                <version>3.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>ddd-example-cms-domain</module>
+        <module>ddd-example-cms-application-service</module>
+        <module>ddd-example-cms-infrastructure-persistence</module>
+        <module>ddd-example-cms-infrastructure-publisher</module>
+        <module>ddd-example-cms-infrastructure-gateway</module>
+        <module>ddd-example-cms-ui-web</module>
+        <module>ddd-example-cms-launcher</module>
+        <module>ddd-example-cms-ui-worker</module>
+        <module>ddd-example-cms-ui-provider</module>
+        <module>ddd-example-cms-ui-subscriber</module>
+        <module>ddd-example-cms-infrastructure-cache</module>
+    </modules>
+
+
+</project>
