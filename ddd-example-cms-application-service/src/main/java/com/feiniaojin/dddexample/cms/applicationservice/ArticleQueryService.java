@@ -3,6 +3,7 @@ package com.feiniaojin.dddexample.cms.applicationservice;
 import com.feiniaojin.dddexample.cms.domain.ArticleEntity;
 import com.feiniaojin.dddexample.cms.domain.ArticleEntityRepository;
 import com.feiniaojin.dddexample.cms.domain.ArticleId;
+import com.feiniaojin.dddexample.cms.domain.PublishState;
 import com.feiniaojin.dddexample.cms.dto.ArticlePageQuery;
 import com.feiniaojin.dddexample.cms.dto.ArticleView;
 import com.feiniaojin.dddexample.cms.dto.ArticleViewAssembler;
@@ -12,6 +13,8 @@ import com.feiniaojin.gracefulresponse.data.PageBean;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -52,11 +55,16 @@ public class ArticleQueryService {
 
     private List<ArticleView> toViewList(List<CmsArticle> cmsArticles) {
 
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
         List<ArticleView> viewList = cmsArticles.stream().map(a -> {
             ArticleView view = new ArticleView();
             view.setArticleId(a.getArticleId());
             view.setTitle(a.getTitle());
             view.setContent(a.getContent());
+            view.setPublishState(PublishState.getByCode(a.getPublishState()).getMsg());
+            view.setCreatedTime(format.format(a.getCreatedTime()));
+            view.setModifiedTime(format.format(a.getModifiedTime()));
             return view;
         }).collect(Collectors.toList());
 

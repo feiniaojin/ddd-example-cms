@@ -1,7 +1,9 @@
 package com.feiniaojin.dddexample.cms.domain;
 
 import com.feiniaojin.ddd.AbstractDomainMask;
+import lombok.Data;
 
+@Data
 public class ArticleEntity extends AbstractDomainMask {
 
     /**
@@ -24,45 +26,12 @@ public class ArticleEntity extends AbstractDomainMask {
      */
     private Integer publishState;
 
-    public ArticleId getArticleId() {
-        return articleId;
-    }
-
-    public void setArticleId(ArticleId articleId) {
-        this.articleId = articleId;
-    }
-
-    public ArticleTitle getTitle() {
-        return title;
-    }
-
-    public void setTitle(ArticleTitle title) {
-        this.title = title;
-    }
-
-    public ArticleContent getContent() {
-        return content;
-    }
-
-    public void setContent(ArticleContent content) {
-        this.content = content;
-    }
-
-    public Integer getPublishState() {
-        return publishState;
-    }
-
-    public void setPublishState(Integer publishState) {
-        this.publishState = publishState;
-    }
-
     /**
      * 创建草稿
      */
     public void createDraft() {
         this.publishState = PublishState.TO_PUBLISH.getCode();
     }
-
 
     /**
      * 修改标题
@@ -83,6 +52,6 @@ public class ArticleEntity extends AbstractDomainMask {
     }
 
     public void publishArticle() {
-        this.publishState = PublishState.TO_PUBLISH.getCode();
+        this.publishState = PublishState.PUBLISHED.getCode();
     }
 }

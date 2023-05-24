@@ -35,6 +35,10 @@ public class ArticleController {
         commandService.modifyTitle(cmd);
     }
 
+    @RequestMapping("/publishArticle")
+    public void publishArticle(@RequestBody ArticlePublishCmd cmd) {
+        commandService.publishArticle(cmd);
+    }
     @RequestMapping("/modifyContent")
     public void modifyTitle(@RequestBody ArticleModifyContentCmd cmd) {
         commandService.modifyContent(cmd);
