@@ -1,5 +1,7 @@
 # ddd-example-cms
 
+**各位朋友clone和fork之前，麻烦顺手帮忙star一下！**
+
 本项目使用`ddd-archetype`创建，是后端的案例工程。项目中实现CMS部分的功能，并落地部分DDD的概念。
 
 ddd-archetype的链接为：https://github.com/feiniaojin/ddd-archetype
