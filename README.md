@@ -2,6 +2,8 @@
 
 本项目使用`ddd-archetype`创建，是后端的案例工程。项目中实现CMS部分的功能，并落地部分DDD的概念。
 
+ddd-archetype的链接为：https://github.com/feiniaojin/ddd-archetype
+
 实现的DDD概念有：实体、值对象、聚合根、Factory、Repository、CQRS。
 
 技术栈：
