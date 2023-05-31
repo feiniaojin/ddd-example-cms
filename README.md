@@ -14,6 +14,14 @@ ddd-archetype的链接为：https://github.com/feiniaojin/ddd-archetype
 - Spring Data Jdbc
 
 对应的前端工程GitHub地址：https://github.com/feiniaojin/ddd-example-cms-front
+
+# maven依赖找不到
+
+如果有maven包找不到，请将以下仓库clone到本地编译即可。
+
+```text
+https://github.com/feiniaojin/ddd
+```
  
 # DDD学习免费电子书
 
