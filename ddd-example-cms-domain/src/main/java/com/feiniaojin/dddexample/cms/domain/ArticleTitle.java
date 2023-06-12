@@ -8,6 +8,7 @@ public class ArticleTitle implements ValueObject<String> {
 
     private final String value;
 
+
     public ArticleTitle(String value) {
         this.check(value);
         this.value = value;
@@ -24,4 +25,5 @@ public class ArticleTitle implements ValueObject<String> {
     public String getValue() {
         return this.value;
     }
+    
 }

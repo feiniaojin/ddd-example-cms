@@ -51,6 +51,9 @@ public class ArticleEntity extends AbstractDomainMask {
         this.content = articleContent;
     }
 
+    /**
+     * 发布
+     */
     public void publishArticle() {
         this.publishState = PublishState.PUBLISHED.getCode();
     }
