@@ -29,7 +29,7 @@ https://github.com/feiniaojin/ddd
 
 本电子书永久免费阅读，欢迎沟通交流。
 
-![](https://s3.cn-north-1.jdcloud-oss.com/shendengbucket1/2023-05-25-11-28nVq0QzwtN28CZ5rw.png)
+![](https://s1.ax1x.com/2023/06/27/pCa5cm6.png)
 
 项目地址：https://github.com/feiniaojin/Thinking-in-DDD 
 
