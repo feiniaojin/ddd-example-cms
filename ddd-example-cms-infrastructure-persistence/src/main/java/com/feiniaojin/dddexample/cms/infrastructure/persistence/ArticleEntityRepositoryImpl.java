@@ -1,6 +1,5 @@
 package com.feiniaojin.dddexample.cms.infrastructure.persistence;
 
-import com.feiniaojin.ddd.EntityId;
 import com.feiniaojin.dddexample.cms.domain.*;
 import com.feiniaojin.dddexample.cms.infrastructure.persistence.data.CmsArticle;
 import org.springframework.stereotype.Component;
@@ -15,7 +14,7 @@ public class ArticleEntityRepositoryImpl implements ArticleEntityRepository {
     private ArticleJdbcRepository jdbcRepository;
 
     @Override
-    public ArticleEntity load(EntityId<String> entityId) {
+    public ArticleEntity load(ArticleId entityId) {
 
         CmsArticle article = jdbcRepository.queryOne(entityId.getValue());
 

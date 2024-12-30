@@ -1,6 +1,5 @@
 package com.feiniaojin.dddexample.cms.domain;
 
-import com.feiniaojin.ddd.AbstractDomainMask;
 import lombok.Data;
 
 @Data

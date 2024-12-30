@@ -7,11 +7,7 @@ import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.Date;
 
-/**
- * @author zhengkai.blog.csdn.net
- * @description cms_article
- * @date 2023-05-23
- */
+
 @Data
 @Table("cms_article")
 public class CmsArticle {

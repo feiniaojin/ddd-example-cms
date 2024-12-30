@@ -1,10 +1,9 @@
 package com.feiniaojin.dddexample.cms.domain;
 
-import com.feiniaojin.ddd.ValueObject;
 
 import java.util.Objects;
 
-public class ArticleContent implements ValueObject<String> {
+public class ArticleContent {
 
     private final String value;
 
@@ -20,7 +19,6 @@ public class ArticleContent implements ValueObject<String> {
         }
     }
 
-    @Override
     public String getValue() {
         return this.value;
     }

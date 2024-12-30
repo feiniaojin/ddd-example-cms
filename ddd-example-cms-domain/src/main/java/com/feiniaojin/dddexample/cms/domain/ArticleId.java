@@ -1,8 +1,7 @@
 package com.feiniaojin.dddexample.cms.domain;
 
-import com.feiniaojin.ddd.EntityId;
 
-public class ArticleId implements EntityId<String> {
+public class ArticleId {
 
     private final String value;
 
@@ -10,7 +9,6 @@ public class ArticleId implements EntityId<String> {
         this.value = value;
     }
 
-    @Override
     public String getValue() {
         return this.value;
     }
